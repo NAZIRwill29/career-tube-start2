@@ -21,3 +21,81 @@ header {
 .hidden {
   display: none;
 }
+
+/* for desktop view */
+@media screen and (min-width: 64em) {
+  .hidden {
+    display: block;
+  }
+}
+
+.search {
+  width: 100%; /*100% of it parent*/
+}
+
+.search input {
+  /* rgba - which is a for transparent */
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  /* to delete outline */
+  outline: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 5px 8px;
+  width: 100%;
+  height: 40px;
+}
+
+.search-button {
+  height: 40px;
+  outline: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 0px 15px;
+}
+
+.search > div {
+  padding: 0;
+}
+
+.avatar {
+  max-width: 30px;
+}
+
+.avatar img {
+  border-radius: 100%;
+}
+
+.layout {
+  width: 100vw; /*make it full screen*/
+}
+
+.nav {
+  border-right: 1px solid #e3e2e2;
+  /*calc - calculate the height from bottom to the header*/
+  height: calc(100vw - 60px);
+  /*make item overflow vertical*/
+  overflow-y: auto;
+  /*set the max width for side nav*/
+  max-width: 250px;
+}
+
+.menu-item i {
+  margin-right: 10px;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+section {
+  padding: 20px 0px;
+  border-bottom: 1px solid #e3e2e2;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  padding: 5px 15px;
+}
