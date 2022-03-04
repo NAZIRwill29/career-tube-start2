@@ -74,7 +74,7 @@ header {
   border-right: 1px solid #e3e2e2;
   /*calc - calculate the height from bottom to the header*/
   height: calc(100vw - 60px);
-  /*make item overflow vertical*/
+  /*make item overflow vertical - can scroll*/
   overflow-y: auto;
   /*set the max width for side nav*/
   max-width: 250px;
@@ -98,4 +98,33 @@ ul {
 
 li {
   padding: 5px 15px;
+}
+
+.page {
+  padding: 0px;
+}
+
+.tags {
+  padding: 0px 15px;
+  border-bottom: 1px solid #e3e2e2;
+}
+
+.tags-content {
+  /* nowrap - will not stack it horizontally  as default*/
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.tag {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 10px 0px;
+}
+
+/* target tag that has class .tag and .active */
+.tag.active {
+  background-color: black;
+  color: white;
 }
