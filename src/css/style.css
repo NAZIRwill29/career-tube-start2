@@ -22,13 +22,6 @@ header {
   display: none;
 }
 
-/* for desktop view */
-@media screen and (min-width: 64em) {
-  .hidden {
-    display: block;
-  }
-}
-
 .search {
   width: 100%; /*100% of it parent*/
 }
@@ -127,4 +120,81 @@ li {
 .tag.active {
   background-color: black;
   color: white;
+}
+
+.content {
+  background: #f9f9f9;
+}
+
+/* container that hold the video */
+.video-content {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.videos {
+  width: 100%;
+  height: calc(100vh - 120px);
+  overflow-y: auto;
+  padding: 20px 80px;
+}
+
+.video {
+  width: 100%;
+  height: 200px;
+}
+
+.video img {
+  height: 100%;
+  width: 100%;
+  /* make image cover the enire element */
+  object-fit: cover;
+}
+
+.video-info {
+  margin-top: 10px;
+}
+
+.video-title {
+  font-size: 16px;
+  font-weight: bold;
+  /* make the text to be cut so it will not be too long - like substr */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  /* */
+}
+
+.author-image {
+  margin-right: 10px;
+}
+
+.author-image img {
+  border-radius: 100%;
+  width: 30px;
+}
+
+.video-stats {
+  font-size: 14px;
+}
+
+/* for index.html inside video folder */
+.player {
+  padding: 30px;
+}
+
+.embed {
+  height: 300px;
+}
+
+/* for desktop view */
+@media screen and (min-width: 64em) {
+  .hidden {
+    display: block;
+  }
+  .embed {
+    height: 500px;
+    width: 888px;
+  }
 }

@@ -62,6 +62,7 @@ const App = {
     where.appendChild(videoElement);
   },
 
+  //<iframe> - loading website in other website
   createPlayerTemplate(video) {
     return `
     <div>
